@@ -10,7 +10,7 @@ Simply unzip and combine both downloaded folders and copy them to your hard driv
 
 --Your directory (e.g., 'D:/LINCs_DToxS_SVD/')<br>
 ----AA_csharp_code<br>
-------1 C# solution file ('LINCS_DToxS_SVD.sln') and 9 subdirectories<br>
+------1 C# solution file ('LINCS_DToxS_SVD.sln') and 1 subdirectory<br>
 ----AA_R_code<br>
 ------52 R-code files<br>
 <br>
