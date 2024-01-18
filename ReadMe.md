@@ -8,7 +8,7 @@ The downloaded zip-folder from gitHub contains the first two directories 'AA_csh
 The downloaded zip-folder from ... (link will be supplied) that contains all of our datasets contains all other directories listed below. 
 Simply unzip and combine both downloaded folders and copy them to your hard drive (e.g. to 'D:' generating 'D:/LINCs_DToxS_SVD/').
 
---Your directory (e.g., 'D:/LINCs_DToxS_SVD/')
+--Your directory (e.g., 'D:/LINCs_DToxS_SVD/')<br>
 ----AA_csharp_code
 ------1 C# solution file ('LINCS_DToxS_SVD.sln') and 9 subdirectories
 ----AA_R_code
