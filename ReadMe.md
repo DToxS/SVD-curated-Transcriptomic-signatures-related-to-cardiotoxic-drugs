@@ -161,7 +161,7 @@ Open the class 'Global_directory_class" and define hard_drive (e.g., "D:/") and 
 Open the C# script 'Code_file.cs'.<br>
 Depending on the available memory, set "Global_class.Memory_larger_than_16GB = " to "true" or "false". If set to false, algorithms generating suppl. figures 1A and B will be skipped.<br>
 Start debugging in the menue 'Debug' or by pressing F5.<br>
-
+<br>
 R-scripts:
 Install R (https://www.r-project.org/).<br>
 Install Rtools (https://cran.r-project.org/bin/windows/Rtools/).<br>
@@ -179,43 +179,43 @@ Start running the file 'SVD_0000000_main_Run_pipeline.R', by coping it into the 
 R libraries used by our pipeline will be installed automatically by the script 'SVD_00_install_missing_packages.R'.<br>
 <br>
 C# and R-script process the data in a successive order that is documented in the 'Code_file.sc' of the C# solution. Whenever one script finishes its current analysis part, it will write a file into the results folder. The other script will wait with the next analysis step until, it reads that file. C# and R-script check every 30 min for updated result files.<br>
-
-------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------
-
+<br>
+------------------------------------------------------------------------------------------------------<br>
+------------------------------------------------------------------------------------------------------<br>
+------------------------------------------------------------------------------------------------------<br>
+<br>
 Output:
-- The results folder "./Results/SVD_manuscript_supplTables/" will contain all Supplemental tables that contain results generated from the data (Suppl. Tables 3 - 32).
+- The results folder "./Results/SVD_manuscript_supplTables/" will contain all Supplemental tables that contain results generated from the data (Suppl. Tables 3 - 32).<br>
 - The results folder "./Results/SVD_manuscript_figures/" will contain PDFs, image files and graphml-files that were used to generate Main and Supplemental figures.
-  Graphml files can be visualized using yED graph editor (https://www.yworks.com/products/yed/download).
+  Graphml files can be visualized using yED graph editor (https://www.yworks.com/products/yed/download).<br>
+<br>
+------------------------------------------------------------------------------------------------------<br>
+------------------------------------------------------------------------------------------------------<br>
+------------------------------------------------------------------------------------------------------<br>
+<br>
+SKIP of single cell RNAseq analysis:<br>
+We assume that most users want to skip the analysis of the sc/sn RNAseq datasets that are very time consumptive. Therefore, we provide the enrichment results for all single cell RNAseq datasets as described under 'Subdirectory: ../Results/ScSnRNAseq_enrichment/'<br>
+If you want to include these steps, you have to uncomment the C# code lines by deleting '\\' at the beginning of each of the following lines:<br>
+\\SingleCellNucleusRNAseq_analysis_class scSnRNAseq = new SingleCellNucleusRNAseq_analysis_class();<br>
+\\scSnRNAseq.Do_enrichment_analysis_for_Schaniel_iPSCdCM_singleCell_cardiomyocyte();<br>
+\\scSnRNAseq.Do_enrichment_analysis_for_Litvinukova_2020_cellsAdultHumanHeart();<br>
+\\scSnRNAseq.Do_enrichment_analysis_for_chaffin_koenig_and_chun_HCM_DCM_vs_NF();<br>
+<br>
+Similarly, you have to uncomment the corresponding command lines in R 'SVD_0000000_main_Run_pipeline.R' by deleting '#' at the beginning of each of the following lines:<br>
+#source('SVD_0a_singleCell.R')<br>
+#source('SVD_0b_HeartCellAtlas_singleCell.R)<br>
+<br>
+-------------------------------------------------------------------------------------------------------<br>
+------------------------------------------------------------------------------------------------------<br>
+------------------------------------------------------------------------------------------------------<br>
+<br>
+System requirements/Performance:<br>
+High-performance computer<br>
+C# and R-code were developed on a high-performance computer with 40 cores and 384 GB RAM that used Windows 10 Pro as an operating system.<br>
+C# code was developed using Microsoft Visual Studio Community 2022 version 17.5.5 (https://visualstudio.microsoft.com/downloads/), R code using R version 4.1.0 and Rstudio 2023.06.1 Build 524.<br>
+On this system, the whole pipeline finishes within less than 10 hours.<br>
 
-------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------
-
-SKIP of single cell RNAseq analysis:
-We assume that most users want to skip the analysis of the sc/sn RNAseq datasets that are very time consumptive. Therefore, we provide the enrichment results for all single cell RNAseq datasets as described under 'Subdirectory: ../Results/ScSnRNAseq_enrichment/'
-If you want to include these steps, you have to uncomment the C# code lines by deleting '\\' at the beginning of each of the following lines:
-\\SingleCellNucleusRNAseq_analysis_class scSnRNAseq = new SingleCellNucleusRNAseq_analysis_class();
-\\scSnRNAseq.Do_enrichment_analysis_for_Schaniel_iPSCdCM_singleCell_cardiomyocyte();
-\\scSnRNAseq.Do_enrichment_analysis_for_Litvinukova_2020_cellsAdultHumanHeart();
-\\scSnRNAseq.Do_enrichment_analysis_for_chaffin_koenig_and_chun_HCM_DCM_vs_NF();
-
-Similarly, you have to uncomment the corresponding command lines in R 'SVD_0000000_main_Run_pipeline.R' by deleting '#' at the beginning of each of the following lines:
-#source('SVD_0a_singleCell.R')
-#source('SVD_0b_HeartCellAtlas_singleCell.R)
-
--------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------
-
-System requirements/Performance:
-High-performance computer
-C# and R-code were developed on a high-performance computer with 40 cores and 384 GB RAM that used Windows 10 Pro as an operating system.
-C# code was developed using Microsoft Visual Studio Community 2022 version 17.5.5 (https://visualstudio.microsoft.com/downloads/), R code using R version 4.1.0 and Rstudio 2023.06.1 Build 524.
-On this system, the whole pipeline finishes within less than 10 hours.
-
-Laptop with 16GB memory
-Code was optimized to also run on a laptop with 16GB memory and one core. All main and almost all supplemental figures can be reproduced on a similar computer (except Suppl. Figures 1A and B).
-Number of cores was set to 1 in the R-file 'SVD_global_parameter.R', "Global_class.Memory_larger_than_16GB = " to "false".
-On this system, the pipeline finishes within a similar time period, except running the file 'SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSpecificEigenarrays_for_test_sets.R' with only one core can take a few days.
+Laptop with 16GB memory<br>
+Code was optimized to also run on a laptop with 16GB memory and one core. All main and almost all supplemental figures can be reproduced on a similar computer (except Suppl. Figures 1A and B).<br>
+Number of cores was set to 1 in the R-file 'SVD_global_parameter.R', "Global_class.Memory_larger_than_16GB = " to "false".<br>
+On this system, the pipeline finishes within a similar time period, except running the file 'SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSpecificEigenarrays_for_test_sets.R' with only one core can take a few days.<br>
