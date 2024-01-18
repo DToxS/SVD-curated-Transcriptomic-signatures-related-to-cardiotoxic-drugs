@@ -134,8 +134,8 @@ HOM_AllOrganism.rpt: Go to https://www.informatics.jax.org/orthology.shtml, sele
 <br>
 Subdirectory: ../Downloaded_datasets/<br>
 The files 'Chun_2023_downregulated_in_LVIP.txt' and 'Chun_2023_upregulated_in_LVIP.txt' were obtained by contacting the authors Chun et al. 2023 (PMID: 36970983).
-PMID:35732739 or Chaffin et al 2022: Download the supplemental tables, open the files '2021-02-03277C-ST6.DCMvsNF.xlsx' and '2021-02-03277C-ST7.HCMvsNF.xlsx' and save them as text "(tab-delimited) (*.txt)" with the new names 'Chaffin_2022_singleNucleus_DCMvsNF.txt' and 'Chaffin_2022_singleNucleus_HCMvsNF.txt' into the specified folder.<br>
-PMID: 35959412 or https://www.nature.com/articles/s44161-022-00028-6: Download 'Supplementary Table 21 Healthy_DCM_Pseudo_DE'. On the first sheet delete all lines that do not contain an adjusted p-value (starting with line 22487). Generate a new column 'Cluster' and add 'DCM_vs_healthy_in_cardiomyocytes' to each line. On the sheet 'Fibroblasts' delete all lines with no adjusted pvalue (starting with 21199), add 'DCM_vs_healthy_in_fibroblasts' to each line in the new column 'Cluster'. Copy all fibroblast lines to the first sheet (excluding the header).  Delete all empty columns to the right of the last filled column (e.g., columns E - AG). If this step is skipped, the C# script might throw an exception due to existing columns that have the same column names (i.e. an empty string, ""). Save the document as in 'text (tab-delimited) (*.txt)' format with the name 'Koenig_2022_singleCell_DCMvsHealthy.txt'. Copy the file into the folder specified above.<br>
+PMID:35732739 or Chaffin et al 2022: Download the supplemental tables, open the files '2021-02-03277C-ST6.DCMvsNF.xlsx' and '2021-02-03277C-ST7.HCMvsNF.xlsx' and save them as text "(tab-delimited) (\*.txt)" with the new names 'Chaffin_2022_singleNucleus_DCMvsNF.txt' and 'Chaffin_2022_singleNucleus_HCMvsNF.txt' into the specified folder.<br>
+PMID: 35959412 or https://www.nature.com/articles/s44161-022-00028-6: Download 'Supplementary Table 21 Healthy_DCM_Pseudo_DE'. On the first sheet delete all lines that do not contain an adjusted p-value (starting with line 22487). Generate a new column 'Cluster' and add 'DCM_vs_healthy_in_cardiomyocytes' to each line. On the sheet 'Fibroblasts' delete all lines with no adjusted pvalue (starting with 21199), add 'DCM_vs_healthy_in_fibroblasts' to each line in the new column 'Cluster'. Copy all fibroblast lines to the first sheet (excluding the header).  Delete all empty columns to the right of the last filled column (e.g., columns E - AG). If this step is skipped, the C# script might throw an exception due to existing columns that have the same column names (i.e. an empty string, ""). Save the document as in 'text (tab-delimited) (\*.txt)' format with the name 'Koenig_2022_singleCell_DCMvsHealthy.txt'. Copy the file into the folder specified above.<br>
 https://www.heartcellatlas.org/: Select 'Version 1' in the upper right corner. Download the h5ad object 'Heart_global' and rename it into 'Litvinukova_2020_cellsAdultHumanHeart_global_raw.h5ad' into this folder.<br>
 (our download: 2022 August 10)<br>
 <br>
@@ -144,8 +144,8 @@ These downloads can be skipped, see below.<br>
 ---------------------------------------------<br>
 <br>
 Subdirectory: '../Cardiomyopathy_genomics/'<br>
-PMID: 33495597 or Harper et al. Nature Genetics volume 53, pages135–142 (2021): Copy the spreadsheet without the initial description (i.e., rows 5-155) into a new document and save it in 'text (tab-delimited) (*.txt)' format under the name 'Harper_2021_suppl_table_2.txt' into the specified folder.<br>
-PMID: 32382064 or Pirruccello Nature Communications volume 11, Article number: 2254 (2020): Download 'Supplementary Dataset 3', delete the lines with headline functions (i.e. lines 2, 25, 40, 63, 96, 125 and 138) and save it in 'text (tab-delimieted) (*.txt)' format under the name 'Pirruccello_2020_suppl_dataFile_3.txt' into the specified folder.<br>
+PMID: 33495597 or Harper et al. Nature Genetics volume 53, pages135–142 (2021): Copy the spreadsheet without the initial description (i.e., rows 5-155) into a new document and save it in 'text (tab-delimited) (\*.txt)' format under the name 'Harper_2021_suppl_table_2.txt' into the specified folder.<br>
+PMID: 32382064 or Pirruccello Nature Communications volume 11, Article number: 2254 (2020): Download 'Supplementary Dataset 3', delete the lines with headline functions (i.e. lines 2, 25, 40, 63, 96, 125 and 138) and save it in 'text (tab-delimieted) (\*.txt)' format under the name 'Pirruccello_2020_suppl_dataFile_3.txt' into the specified folder.<br>
 <br>
 ------------------------------------------------------------------------------------------------------<br>
 ------------------------------------------------------------------------------------------------------<br>
@@ -155,7 +155,7 @@ Run the analysis<br>
 <br>
 C# script:<br>
 Open the file "LINCS_SVD_manuscript.sln" with Visual Studio (https://visualstudio.microsoft.com/downloads/).<br>
-Using the solution explorer (right side of the screen, or if hidden, menu 'View' - 'Solution explorer') open 'LINCS_DToxS_SVD', right click on 'References' and select 'Manage NuGet packages..:' instructions will follow<br>
+Using the solution explorer (right side of the screen, or if hidden, menu 'View' - 'Solution explorer') open 'LINCS_DToxS_SVD', right click on 'References' and select 'Manage NuGet packages..:'. <i>Further instructions will be added here.</i><br>
 Using the solution explorer (right side of the screen, or if hidden, menu 'View' - 'Solution explorer') select the folder 'Common_classes'. Select the C# script 'Common_classes.cs'.
 Open the class 'Global_directory_class" and define hard_drive (e.g., "D:/") and major_directory (e.g., "LINCs_DToxS_SVD/").<br>
 Open the C# script 'Code_file.cs'.<br>
