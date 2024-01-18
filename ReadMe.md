@@ -1,6 +1,6 @@
 This folder contains the C# and R code that were used to do all analyzes in our manuscript "Multiscale mapping of transcriptomic signatures for cardiotoxic drugs" that is currently available as a preprint (10.1101/2021.11.02.466774).
 
-The current code is deposited for test reasons.
+Final test runs for the deposited code are ongoing.
 
 --------------------------------------------------------------------------------
 Below is a documentation of the directory structural and all needed experimental and databases files.
