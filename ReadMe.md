@@ -5,7 +5,7 @@ Final test runs for the deposited code are ongoing.
 --------------------------------------------------------------------------------
 Below is a documentation of the directory structural and all needed experimental and databases files.
 The downloaded zip-folder from gitHub contains the first two directories 'AA_csharp_code' and 'AA_R_code'.
-The downloaded zip-folder from ... (link will be supplied) that contains all of our datasets contains all other directories listed below. 
+All of our datasets can be downloaded from 'https://iyengarlab.org/dtoxs/datasets.php' after selection of 'Datasets used for prediction of transcriptomic and genomic signatures for TKI-induced cardiotoxicity'. The downloaded dataset zip-folder contains all other directories listed below. 
 Simply unzip and combine both downloaded folders and copy them to your hard drive (e.g. to 'D:' generating 'D:/LINCs_DToxS_SVD/').
 
 --Your directory (e.g., 'D:/LINCs_DToxS_SVD/')<br>
