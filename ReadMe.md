@@ -211,7 +211,7 @@ High-performance computer<br>
 C# and R-code were developed on a high-performance computer with 40 cores and 384 GB RAM that used Windows 10 Pro as an operating system.<br>
 C# code was developed using Microsoft Visual Studio Community 2022 version 17.5.5 (https://visualstudio.microsoft.com/downloads/), R code using R version 4.1.0 and Rstudio 2023.06.1 Build 524.<br>
 On this system, the whole pipeline finishes within less than 10 hours.<br>
-
+<br>
 Laptop with 16GB memory<br>
 Code was optimized to also run on a laptop with 16GB memory and one core. All main and almost all supplemental figures can be reproduced on a similar computer (except Suppl. Figures 1A and B).<br>
 Number of cores was set to 1 in the R-file 'SVD_global_parameter.R', "Global_class.Memory_larger_than_16GB = " to "false".<br>
