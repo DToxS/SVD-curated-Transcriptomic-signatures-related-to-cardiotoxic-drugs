@@ -154,11 +154,10 @@ Run the analysis<br>
 C# script:<br>
 Open the file "LINCS_SVD_manuscript.sln" with Visual Studio (https://visualstudio.microsoft.com/downloads/).<br>
 Using the solution explorer (right side of the screen, or if hidden, menu 'View' - 'Solution explorer') open 'LINCS_DToxS_SVD', right click on 'References' and select 'Manage NuGet packages..:'. <i>Further instructions will be added here.</i><br>
-Using the solution explorer (right side of the screen, or if hidden, menu 'View' - 'Solution explorer') select the folder 'Common_classes'. Select the C# script 'Common_classes.cs'.
-Open the class 'Global_directory_class" and define hard_drive (e.g., "D:/") and major_directory (e.g., "LINCs_DToxS_SVD/").<br>
+In the solution explorer select the folder 'Common_classes'. Select the C# script 'Common_classes.cs'. Open the class 'Global_directory_class" and define hard_drive (e.g., "D:/") and major_directory (e.g., "LINCs_DToxS_SVD/").<br>
 Open the C# script 'Code_file.cs'.<br>
 Depending on the available memory, set "Global_class.Memory_larger_than_16GB = " to "true" or "false". If set to false, algorithms generating suppl. figures 1A and B will be skipped.<br>
-Start debugging in the menue 'Debug' or by pressing F5.<br>
+Start debugging in the menu 'Debug' or by pressing F5.<br>
 <br>
 R-scripts:
 Install R (https://www.r-project.org/).<br>
