@@ -126,8 +126,7 @@ https://ftp.ncbi.nih.gov/pub/HomoloGene/build68/: Download the file 'homologene.
 (our download: 2024 January 15)<br>
 ncbiRefSeq.All.hg38.gtf: Go to https://genome.ucsc.edu, select Table Browser, make the following selections: "clade: Mammal", "genome: Human", "assembly: Dec. 2013 (GRCh38/hg38)", "group: Genes and Gene Predictions", "track: NCBI RefSeq", "table: RefSeq All (ncbiRefSeq)", "region: genome", "output format: GTF - gene transfer format (limited)", "output filename: ncbiRefSeq.All.hg38.txt", followed by pressing "get output". Copy the downloaded file into the specified folder.<br>
 (our download: 2017 March 06)<br>
-HOM_AllOrganism.rpt: Go to https://www.informatics.jax.org/orthology.shtml, select 'Download', then 'Vertebrate Homology'. Download the file 'HOM_AllOrganism.rpt' (right click, select 'Save link as'). Copy the file into the subdiretory specified above. Note that depending on the download date "DB Class Keys" are used instead of "HomoloGene IDs". Consequently, the download date needs to be specified in the C# script ("Global_class.Mgi_homologies_downloaded_2024_or_later_instead_of_2019 = " "true" or "false")<br>
-(our download: 2024 January 15)<br>
+HOM_AllOrganism.rpt: Go to https://www.informatics.jax.org/orthology.shtml, select 'Download', then 'Vertebrate Homology'. Download the file 'HOM_AllOrganism.rpt' (right click, select 'Save link as'). Copy the file into the subdiretory specified above.<br>
 <br>
 ---------------------------------------------<br>
 <br>
