@@ -142,7 +142,7 @@ These downloads can be skipped, see below.<br>
 ---------------------------------------------<br>
 <br>
 Subdirectory: '../Cardiomyopathy_genomics/'<br>
-PMID: 33495597 or Harper et al. Nature Genetics volume 53, pages135–142 (2021): Copy the spreadsheet without the initial description (i.e., rows 5-155) into a new document and save it in 'text (tab-delimited) (\*.txt)' format under the name 'Harper_2021_suppl_table_2.txt' into the specified folder.<br>
+PMID: 33495597 or Harper et al. Nature Genetics volume 53, pages135–142 (2021): Download the file '41588_2020_764_MOESM3_ESM.xlsx'. Copy the spreadsheet on sheet S2 without the initial description (i.e., rows 5-155) into a new document and save it in 'text (tab-delimited) (\*.txt)' format under the name 'Harper_2021_suppl_table_2.txt' into the specified folder.<br>
 PMID: 32382064 or Pirruccello Nature Communications volume 11, Article number: 2254 (2020): Download 'Supplementary Dataset 3', delete the lines with headline functions (i.e. lines 2, 25, 40, 63, 96, 125 and 138) and save it in 'text (tab-delimieted) (\*.txt)' format under the name 'Pirruccello_2020_suppl_dataFile_3.txt' into the specified folder.<br>
 <br>
 ------------------------------------------------------------------------------------------------------<br>
