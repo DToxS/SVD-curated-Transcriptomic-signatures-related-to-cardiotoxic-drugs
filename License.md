@@ -1,6 +1,6 @@
 Copyright 2023. The uploaded code was written by Jens Hansen, working for the Ravi Iyengar lab.<br>
 <br>
-It is made available under the apache 2 license:<br>
+It is made available under the Apache License, Version 2.0:<br>
 <br>
 The copyright holders for the code are the authors/funders.<br>
 <br>
