@@ -26,7 +26,7 @@ Simply unzip and combine both downloaded folders and copy them to your hard driv
 ------Koenig_2022_singleCell_DCMvsHealthy.txt (optional, see below)<br>
 ------Litvinukova_2020_cellsAdultHumanHeart_global_raw.h5ad (optional, see below)<br>
 <br>
-----Experimental_data (all datasets are part of zip-folder at predictox.org)<br>
+----Experimental_data (all datasets are part of zip-folder at iyengarlab.org/dtoxs/datasets.php)<br>
 ------Degs_initial_iPSCdCMs_EC<br>
 --------8 files with edgeR DEGs<br>
 ------Degs_initial_iPSCdCMs_P0<br>
@@ -49,7 +49,7 @@ Simply unzip and combine both downloaded folders and copy them to your hard driv
 --------HOM_AllOrganism.rpt<br>
 --------ncbiRefSeq.All.hg38.gtf<br>
 <br>
-----iPSCdCM_scRNAseq (all datasets are part of zip-folder at predictox.org)<br>
+----iPSCdCM_scRNAseq (all datasets are part of zip-folder at iyengarlab.org/dtoxs/datasets.php)<br>
 ------iPSCd_CM_marker_genes<br>
 ------MSN01-3_control<br>
 --------raw_feature_bc_matrix<br>
