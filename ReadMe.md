@@ -172,10 +172,10 @@ Set the overall_lincs_directory that contains all subdirectories in the R-file '
 (e.g., overall_lincs_directory = "D:/LINCs_DToxS_SVD/").<br>
 Set the number of available cores for parallel processing in the R-file 'SVD_global_parameter.R'.<br>
 Save your changes.<br>
-Start running the file 'SVD_0000000_main_Run_pipeline.R', by coping it into the R user interface (https://www.r-project.org/) or using the functionalities of any suited R code editor.<br>
-R libraries used by our pipeline will be installed automatically by the script 'SVD_00_install_missing_packages.R'.<br>
+Start running the file 'SVD_0000000_main_Run_pipeline.R', by coping it into the R user interface or using the functionalities of any suited R code editor.<br>
+R libraries used by our pipeline will be installed by the script 'SVD_00_install_missing_packages.R'.<br>
 <br>
-C# and R-script process the data in a successive order that is documented in the 'Code_file.sc' of the C# solution. Whenever one script finishes its current analysis part, it will write a file into the results folder. The other script will wait with the next analysis step until, it reads that file. C# and R-script check every 30 min for updated result files.<br>
+C# and R-script process the data in a successive order that is documented in the 'Code_file.sc' of the C# solution. Whenever one script finishes its current analysis part, it will write a file into the results folder. The other script will wait with the next analysis step until, it reads that file. Both scripts check every 30 min for updated result files.<br>
 <br>
 ------------------------------------------------------------------------------------------------------<br>
 ------------------------------------------------------------------------------------------------------<br>
