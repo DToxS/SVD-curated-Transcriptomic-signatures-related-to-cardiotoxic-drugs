@@ -41,7 +41,7 @@ Simply unzip and combine both downloaded folders and copy them to your hard driv
 ------Whole_genome_sequencing<br>
 --------annotated_combined.hg38_multianno_reheadered_withGWAS_withRSids.txt<br>
 <br>
-----GeneDatabases_orthology<br>
+----GeneDatabases_homology<br>
 ------Download<br>
 --------All_Data_gene_info.txt<br>
 --------gene2refseq.txt<br>
@@ -117,7 +117,7 @@ HuGE_phenopedia.txt: Download 'GENES TO PHENOTYPE' from 'https://hpo.jax.org/app
 <br>
 ---------------------------------------------<br>
 <br>
-Subdirectory: ../GeneDatabases_orthology/<br>
+Subdirectory: ../GeneDatabases_homology/<br>
 https://ftp.ncbi.nlm.nih.gov/gene/DATA/: Download the file 'gene2refseq.gz', unzip, add the extension '.txt' and copy the file into the specified folder.<br>
 (our download: 2018June01)<br>
 https://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/: Download the file 'All_Data.gene_info.gz', unzip, rename the file to 'All_Data_gene_info.txt' (i.e. replace the dots within the file name by underlines and add the extension '.txt') and copy into the specified subdirectory.<br>
