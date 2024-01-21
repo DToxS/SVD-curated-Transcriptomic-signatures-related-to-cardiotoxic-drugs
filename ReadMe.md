@@ -154,7 +154,7 @@ Run the analysis<br>
 C# script:<br>
 Open the file "LINCS_SVD_manuscript.sln" with Visual Studio (https://visualstudio.microsoft.com/downloads/). Using the Visual Studio Installer also install the package 'NET desktop development'.<br>
 Open the file 'LINCS_DToxS_SVD.sln' in the 'AA_csharp_code' folder with Visual Studio.<br>
-Using the solution explorer (right side of the screen, or if hidden, menu 'View' - 'Solution explorer') open 'LINCS_DToxS_SVD', right click on 'References' and select 'Manage NuGet packages..:'. Select 'Restore' in the upper right corner. After the download have been finished, restart Visual Studio.<br>
+Using the solution explorer (right side of the screen, or if hidden, menu 'View' - 'Solution explorer') open 'LINCS_DToxS_SVD', right click on 'References' and select 'Manage NuGet packages..:'. Select 'Restore' in the upper right corner. After the downloads have been finished, restart Visual Studio.<br>
 In the solution explorer select the folder 'Common_classes'. Select the C# script 'Common_classes.cs'. Open the class 'Global_directory_class" and define hard_drive (e.g., "D:/") and major_directory (e.g., "LINCs_DToxS_SVD/").<br>
 Open the C# script 'Code_file.cs'.<br>
 Depending on the available memory, set "Global_class.Memory_larger_than_16GB = " to "true" or "false". If set to false, algorithms generating suppl. figures 1A and B will be skipped.<br>
