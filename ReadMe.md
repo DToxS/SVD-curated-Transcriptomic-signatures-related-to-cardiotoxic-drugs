@@ -4,7 +4,7 @@ This folder contains the C# and R code that were used to do all analyzes in our 
 <br>
 Below is a documentation of the directory structural and all needed experimental and databases files.
 The downloaded zip-folder from gitHub contains the first two directories 'AA_csharp_code' and 'AA_R_code'. If unpacking this folder generates a warning about a too long file names, rename the zip folder to "S" and retry the unpacking.<br>
-All of our datasets can be downloaded from 'https://iyengarlab.org/dtoxs/datasets.php' after selection of 'Datasets used for prediction of transcriptomic and genomic signatures for TKI-induced cardiotoxicity'. The downloaded dataset zip-folder contains all other directories listed below.<br>
+All of our datasets can be downloaded from 'https://iyengarlab.org/dtoxs/datasets.php' after selection of 'Datasets used for prediction of transcriptomic and genomic signatures for TKI-induced cardiotoxicity'. The downloaded dataset zip-folder contains all other directories listed below (rename the directory 'GeneDatabases_orthology' to 'GeneDatabases_homology'.<br>
 Both downloads contain one folder called 'LINCS_DToxS_SVD'. Simply merge these folders and copy the merged folder to your hard drive (e.g. to 'D:' generating 'D:/LINCs_DToxS_SVD/').<br>
 The merged folder will contain the following directory structure, missing files have to be added, as described below.<br>
 <br>
@@ -151,7 +151,7 @@ PMID: 32382064 or Pirruccello Nature Communications volume 11, Article number: 2
 Run the analysis<br>
 <br>
 C# script:<br>
-Open the file "LINCS_SVD_manuscript.sln" with Visual Studio (https://visualstudio.microsoft.com/downloads/). Using the Visual Studio Installer also install the package 'NET desktop development'.<br>
+Download the Visual Studio Installer (https://visualstudio.microsoft.com/downloads/). Follow the instructions and install Visual Studio and the package 'NET desktop development'.<br>
 Open the file 'LINCS_DToxS_SVD.sln' in the 'AA_csharp_code' folder with Visual Studio.<br>
 Using the solution explorer (right side of the screen, or if hidden, menu 'View' - 'Solution explorer') open 'LINCS_DToxS_SVD', right click on 'References' and select 'Manage NuGet packages..:'. Select 'Restore' in the upper right corner. After the downloads have been finished, restart Visual Studio.<br>
 In the solution explorer select the folder 'Common_classes'. Select the C# script 'Common_classes.cs'. Open the class 'Global_directory_class" and define hard_drive (e.g., "D:/") and major_directory (e.g., "LINCs_DToxS_SVD/").<br>
