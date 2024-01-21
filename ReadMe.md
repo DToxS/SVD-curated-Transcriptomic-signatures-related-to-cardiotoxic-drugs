@@ -1,8 +1,7 @@
 This folder contains the C# and R code that were used to do all analyzes in our manuscript "Multiscale mapping of transcriptomic signatures for cardiotoxic drugs" that is currently available as a preprint (10.1101/2021.11.02.466774).
-
-Final test runs for the deposited code are ongoing.
-
---------------------------------------------------------------------------------
+<br>
+--------------------------------------------------------------------------------<br>
+<br>
 Below is a documentation of the directory structural and all needed experimental and databases files.
 The downloaded zip-folder from gitHub contains the first two directories 'AA_csharp_code' and 'AA_R_code'. If unpacking this folder generates a warning about a too long file names, rename the zip folder to "S" and retry the unpacking.<br>
 All of our datasets can be downloaded from 'https://iyengarlab.org/dtoxs/datasets.php' after selection of 'Datasets used for prediction of transcriptomic and genomic signatures for TKI-induced cardiotoxicity'. The downloaded dataset zip-folder contains all other directories listed below.<br>
