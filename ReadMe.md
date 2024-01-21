@@ -159,7 +159,7 @@ Open the C# script 'Code_file.cs'.<br>
 Depending on the available memory, set "Global_class.Memory_larger_than_16GB = " to "true" or "false". If set to false, algorithms generating suppl. figures 1A and B will be skipped.<br>
 Start debugging in the menu 'Debug' or by pressing F5.<br>
 <br>
-R-scripts:
+R-scripts:<br>
 Install R (https://www.r-project.org/).<br>
 Install Rtools (https://cran.r-project.org/bin/windows/Rtools/).<br>
 Open the file 'SVD_0000000_main_Run_pipeline.R' with any text or R code editor.<br>
