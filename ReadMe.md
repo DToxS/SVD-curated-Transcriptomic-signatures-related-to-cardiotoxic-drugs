@@ -152,7 +152,7 @@ PMID: 32382064 or Pirruccello Nature Communications volume 11, Article number: 2
 Run the analysis<br>
 <br>
 C# script:<br>
-Open the file "LINCS_SVD_manuscript.sln" with Visual Studio (https://visualstudio.microsoft.com/downloads/). Using the Visual Studio Installer also install the package 'Net desktop development'.<br>
+Open the file "LINCS_SVD_manuscript.sln" with Visual Studio (https://visualstudio.microsoft.com/downloads/). Using the Visual Studio Installer also install the package 'NET desktop development'.<br>
 Open the file 'LINCS_DToxS_SVD.sln' in the 'AA_csharp_code' folder with Visual Studio.<br>
 Using the solution explorer (right side of the screen, or if hidden, menu 'View' - 'Solution explorer') open 'LINCS_DToxS_SVD', right click on 'References' and select 'Manage NuGet packages..:'. Select 'Restore' in the upper right corner. After the download have been finished, restart Visual Studio.<br>
 In the solution explorer select the folder 'Common_classes'. Select the C# script 'Common_classes.cs'. Open the class 'Global_directory_class" and define hard_drive (e.g., "D:/") and major_directory (e.g., "LINCs_DToxS_SVD/").<br>
