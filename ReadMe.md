@@ -166,11 +166,9 @@ Open the file 'SVD_0000000_main_Run_pipeline.R' with any text or R code editor.<
 Depending on the available memory, set "memory_larget_than_16GB = " to "TRUE" or "FALSE". If set to false, algorithms generating Suppl. Figures 1A and B will be skipped.
 Set the working directory that contains all R code files (e.g, working_directory = "D:/LINCs_DToxS_SVD/AA_R_code/").<br>
 Save your changes.<br>
-Open the file 'SVD_global_parameter.R' with any text or R code editor.<br>
-Set the overall_lincs_directory that contains all subdirectories in the R-file 'SVD_global_parameter.R'
+Open the file 'SVD_global_parameter.R' and specify the overall_lincs_directory that contains all subdirectories
 (e.g., overall_lincs_directory = "D:/LINCs_DToxS_SVD/").<br>
-Set the number of available cores for parallel processing in the R-file 'SVD_global_parameter.R'.<br>
-Save your changes.<br>
+Next, set the number of available cores for parallel processing in the same file. Save your changes.<br>
 Start running the file 'SVD_0000000_main_Run_pipeline.R', by coping it into the R user interface or using the functionalities of any suited R code editor.<br>
 R libraries used by our pipeline will be installed by the script 'SVD_00_install_missing_packages.R'.<br>
 <br>
