@@ -181,7 +181,7 @@ The C# script writes a progress report file into the 'Results' directory. Progre
 <br>
 Output:
 - The results folder "./Results/SVD_manuscript_supplTables/" will contain all supplemental tables that contain results generated from the data (Suppl. Tables 3 - 32).<br>
-- The results folder "./Results/SVD_manuscript_figures/" will contain PDFs, image files and graphml-files that were used to generate Main and Supplemental figures.
+- The results folder "./Results/SVD_manuscript_figures/" will contain PDFs, image files and graphml-files that were used to generate main and supplemental figures.
   Graphml files can be visualized using yED graph editor (https://www.yworks.com/products/yed/download).<br>
 <br>
 ------------------------------------------------------------------------------------------------------<br>
