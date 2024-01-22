@@ -190,13 +190,13 @@ Output:
 <br>
 SKIP of single cell RNAseq analysis:<br>
 We assume that most users want to skip the analysis of the sc/sn RNAseq datasets that are very time consumptive. Therefore, we provide the enrichment results for all single cell RNAseq datasets as described under 'Subdirectory: ../Results/ScSnRNAseq_enrichment/'<br>
-If you want to include these steps, you have to uncomment the C# code lines by deleting '\\' at the beginning of each of the following lines:<br>
+If you want to include these steps, you have to uncomment the related C# code by deleting '\\' at the beginning of each of the following lines:<br>
 \\SingleCellNucleusRNAseq_analysis_class scSnRNAseq = new SingleCellNucleusRNAseq_analysis_class();<br>
 \\scSnRNAseq.Do_enrichment_analysis_for_Schaniel_iPSCdCM_singleCell_cardiomyocyte();<br>
 \\scSnRNAseq.Do_enrichment_analysis_for_Litvinukova_2020_cellsAdultHumanHeart();<br>
 \\scSnRNAseq.Do_enrichment_analysis_for_chaffin_koenig_and_chun_HCM_DCM_vs_NF();<br>
 <br>
-Similarly, you have to uncomment the corresponding command lines in R 'SVD_0000000_main_Run_pipeline.R' by deleting '#' at the beginning of each of the following lines:<br>
+Similarly, you have to uncomment the related R code in 'SVD_0000000_main_Run_pipeline.R' by deleting '#' at the beginning of each of the following lines:<br>
 #source('SVD_0a_singleCell.R')<br>
 #source('SVD_0b_HeartCellAtlas_singleCell.R)<br>
 <br>
