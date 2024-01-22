@@ -3,7 +3,7 @@ This folder contains the C# and R code that were used to do all analyzes in our 
 --------------------------------------------------------------------------------<br>
 <br>
 Below is a documentation of the directory structure and all needed experimental and databases files.
-The downloaded zip-folder from gitHub contains the first two directories 'AA_csharp_code' and 'AA_R_code'. If unpacking this folder generates a warning about too long file names, rename the zip folder to "S" and retry the unpacking.<br>
+The downloaded zip-folder from github contains the first two directories 'AA_csharp_code' and 'AA_R_code'. If unpacking this folder generates a warning about too long file names, rename the zip folder to "S" and retry the unpacking.<br>
 All of our datasets can be downloaded from 'https://iyengarlab.org/dtoxs/datasets.php' after selection of 'Datasets used for prediction of transcriptomic and genomic signatures for TKI-induced cardiotoxicity'. The downloaded dataset zip-folder contains all other directories listed below (rename the directory 'GeneDatabases_orthology' to 'GeneDatabases_homology').<br>
 Both downloads contain one folder called 'LINCS_DToxS_SVD'. Simply merge these folders and copy the merged folder to your hard drive (e.g. to 'D:' generating 'D:/LINCs_DToxS_SVD/').<br>
 The merged folder will contain the following directory structure, missing files have to be added, as described below.<br>
