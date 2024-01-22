@@ -172,7 +172,8 @@ Next, set the number of available cores for parallel processing in the same file
 Start running the file 'SVD_0000000_main_Run_pipeline.R', by coping it into the R user interface or using the functionalities of any suited R code editor.<br>
 R libraries used by our pipeline will be installed by the script 'SVD_00_install_missing_packages.R'.<br>
 <br>
-C# and R-script process the data in a successive order that is documented in the 'Code_file.sc' of the C# solution. Whenever one script finishes its current analysis part, it will write a file into the results folder. The other script will wait with the next analysis step until, it reads that file. Both scripts check every 30 min for updated result files.<br>
+C# and R-script process the data in a successive order that is documented in the 'Code_file.sc' of the C# solution. Whenever one script finishes its current analysis part, it will write a file into the results folder. The other script will wait with the next analysis step until it that file has been created. Both scripts check every 30 min for updated result files.<br>
+The C# script writes a progress report file into the 'Results' directory. Progress information about the running R script can be obtained from the R-console.<br>
 <br>
 ------------------------------------------------------------------------------------------------------<br>
 ------------------------------------------------------------------------------------------------------<br>
