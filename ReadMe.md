@@ -1,4 +1,4 @@
-This folder contains C# and R code that was used to do the main analyzes in our manuscript "Multiscale mapping of transcriptomic signatures for cardiotoxic drugs" that is currently available as a preprint (10.1101/2021.11.02.466774).<br>
+This folder contains C# and R code that was used to do the main analyses in our manuscript "Multiscale mapping of transcriptomic signatures for cardiotoxic drugs" that is currently available as a preprint (10.1101/2021.11.02.466774).<br>
 <br>
 --------------------------------------------------------------------------------<br>
 <br>
