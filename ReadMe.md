@@ -173,7 +173,8 @@ Start running the file 'SVD_0000000_main_Run_pipeline.R', by coping it into the 
 R libraries used by our pipeline will be installed by the script 'SVD_00_install_missing_packages.R'.<br>
 <br>
 C# and R-script process the data in a successive order that is documented in the 'Code_file.sc' of the C# solution. Whenever one script finishes its current analysis part, it will write a file into the results folder. The other script will wait with the next analysis step until it can detect that file. Both scripts check the results directory every 30 min.<br>
-The C# script writes a progress report file into the 'Results' directory. Overall progress information about the running R script can be obtained from the R-console. Some R-scripts also write progress report files into the results folder.<br>
+<br>
+The C# script writes a progress report file into the 'Results' directory. Overall progress information about the running R pipeline can be obtained from the R-console. Additionally, some R-scripts write progress report files into the results folder as well.<br>
 <br>
 ------------------------------------------------------------------------------------------------------<br>
 ------------------------------------------------------------------------------------------------------<br>
