@@ -1,6 +1,11 @@
-This folder contains C# and R code that was used to do the main analyses in our manuscript "Multiscale mapping of transcriptomic signatures for cardiotoxic drugs" that is currently available as a preprint (10.1101/2021.11.02.466774).<br>
 <br>
 Currently under construction<br>
+<br>
+This folder contains C# and R code that was used to do the main analyses in our manuscript "Multiscale mapping of transcriptomic signatures for cardiotoxic drugs" that is currently available as a preprint (10.1101/2021.11.02.466774).<br>
+<br>
+To run the pipeline in a LINUX environment, the folder also contains a compiled executable of the C# script. Please see details below.<br>
+<br>
+The R-scripts ‘SVD1-17’ that use SVD to identify drug-selective gene expression profiles and search for transcriptomic outlier responses can be run in isolation, skipping the need for the preparation of datasets published by others. Please see details below.
 <br>
 --------------------------------------------------------------------------------<br>
 <br>
@@ -109,6 +114,8 @@ The merged folder will contain the following directory structure, missing files 
 <br>
 The indicated files can be downloaded from the following links. Since some files might have been updated and modified after we downloaded them, we also indicate our download dates.<br>
 <br>
+Any user who only wants to run the R scripts SVD 1-17 that use SVD to identify drug-selective gene expression profiles and search for transcriptomic outliers can skip all following steps and continue with the section ‘Run the analysis’ – ‘R-scripts’.<br>
+<br>
 ---------------------------------------------<br>
 <br>
 Initial LINCs datasets processed by pipeline:<br>
@@ -166,9 +173,9 @@ PMID: 32382064 or Pirruccello Nature Communications volume 11, Article number: 2
 ------------------------------------------------------------------------------------------------------<br>
 ------------------------------------------------------------------------------------------------------<br>
 <br>
-Run the analysis<br>
+<b>Run the analysis</b><br>
 <br>
-C# script:<br>
+<b>Windows: C# script</b><br>
 Download the Visual Studio Installer (https://visualstudio.microsoft.com/downloads/). Follow the instructions and install Visual Studio and the package 'NET desktop development'.<br>
 Open the file 'LINCS_DToxS_SVD.sln' in the 'AA_csharp_code' folder with Visual Studio.<br>
 Using the solution explorer (right side of the screen, or if hidden, menu 'View' - 'Solution explorer') open 'LINCS_DToxS_SVD', right click on 'References' and select 'Manage NuGet packages..:'. Select 'Restore' in the upper right corner. After the downloads have been finished, restart Visual Studio.<br>
@@ -177,7 +184,12 @@ Open the C# script 'Code_file.cs'.<br>
 Depending on the available memory, set "Global_class.Memory_larger_than_16GB = " to "true" or "false". If set to false, algorithms generating suppl. figures 1A and B will be skipped.<br>
 Start debugging in the menu 'Debug' or by pressing F5.<br>
 <br>
-R-scripts:<br>
+<b>Linux: C# executable</b><br>
+To run the pipeline on a linux system, download  the ‘mono-devel’ package from 'mono-project.com' ("an open source implementation of Microsoft's .NET Framework", "sponsored by Microsoft"), e.g. by using ‘sudo apt install mono-devel‘.<br>
+Use the terminal to open the subdirectory ‘AA_csharp_exe_for_linux’ and start the code by using the command ‘mono Project2.exe’.
+For the R-script, follow the instructions below, except set ‘memory_larger_than_16GB’ to ‘FALSE’, since the compiled C# script makes the same assumption.
+<br>
+<b>R-scripts:</b><br>
 Install R (https://www.r-project.org/).<br>
 Install Rtools (https://cran.r-project.org/bin/windows/Rtools/).<br>
 Open the file 'SVD_0000000_main_Run_pipeline.R' with any text or R code editor.<br>
@@ -189,6 +201,9 @@ Open the file 'SVD_global_parameter.R' and specify the overall_lincs_directory t
 Next, set the number of available cores for parallel processing in the same file. Save your changes.<br>
 Start running the file 'SVD_0000000_main_Run_pipeline.R', by coping it into the R user interface or using the functionalities of any suited R code editor.<br>
 R libraries used by our pipeline will be installed by the script 'SVD_00_install_missing_packages.R'.<br>
+<br>
+<b>Only run SVD and outlier pipeline in R</b><br>
+To only run R scripts ‘SVD 1-17’ copy the content of the folder ‘Results_to_run_R_SVD1to17_in_isolation’ into the ‘Results’ folder. In addition, set ‘memory_larger_than_16GB’ to ‘FALSE’ to skip running the script ‘SVD_0c_Correlation_with_GTEx.R’.
 <br>
 C# and R-script process the data in a successive order that is documented in the 'Code_file.sc' of the C# solution. Whenever one script finishes its current analysis part, it will write a file into the results folder. The other script will wait with the next analysis step until it can detect that file. Both scripts check the results directory every 30 min.<br>
 <br>
