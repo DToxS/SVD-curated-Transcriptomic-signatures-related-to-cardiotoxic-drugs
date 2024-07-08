@@ -189,7 +189,7 @@ To run the pipeline on a linux system, download  the ‘mono-devel’ package fr
 Use the terminal to open the subdirectory ‘AA_csharp_exe_for_linux’ and start the code by using the command ‘mono Project2.exe’.
 For the R-script, follow the instructions below, except set ‘memory_larger_than_16GB’ to ‘FALSE’, since the compiled C# script makes the same assumption.<br>
 <br>
-<b>R-scripts:</b><br>
+<b>R-scripts</b><br>
 Install R (https://www.r-project.org/).<br>
 Install Rtools (https://cran.r-project.org/bin/windows/Rtools/).<br>
 Open the file 'SVD_0000000_main_Run_pipeline.R' with any text or R code editor.<br>
@@ -209,11 +209,7 @@ To only run R scripts ‘SVD 1-17’ copy the content of the folder ‘Results_t
 C#- and R-script process the data in a successive order that is documented in the 'Code_file.sc' of the C# solution. Whenever one script finishes its current analysis part, it will write a file into the results folder. The other script will wait with the next analysis step until it can detect that file. Both scripts check the results directory every 30 min.<br>
 The C# script writes a progress report file into the 'Results' directory. Overall progress information about the running R pipeline can be obtained from the R-console. Additionally, some R-scripts write progress report files into the results folder as well.<br>
 <br>
-------------------------------------------------------------------------------------------------------<br>
-------------------------------------------------------------------------------------------------------<br>
-------------------------------------------------------------------------------------------------------<br>
-<br>
-Output:
+<b>Output of the complete pipeline</b>
 - The results folder "./Results/SVD_manuscript_supplTables/" will contain all supplemental tables that contain results generated from the data (Suppl. Tables 3 - 32).<br>
 - The results folder "./Results/SVD_manuscript_figures/" will contain PDFs, image files and graphml-files that were used to generate main and supplemental figures.
   Graphml files can be visualized using yED graph editor (https://www.yworks.com/products/yed/download).<br>
