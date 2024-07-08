@@ -203,7 +203,7 @@ Start running the file 'SVD_0000000_main_Run_pipeline.R', by coping it into the 
 R libraries used by our pipeline will be installed by the script 'SVD_00_install_missing_packages.R'.<br>
 <br>
 <b>Only run SVD and outlier pipeline in R</b><br>
-To only run R scripts ‘SVD 1-17’ copy the content of the folder ‘Results_to_run_R_SVD1to17_in_isolation’ into the ‘Results’ folder. In addition, set ‘memory_larger_than_16GB’ to ‘FALSE’ to skip running the script ‘SVD_0c_Correlation_with_GTEx.R’.
+To only run R scripts ‘SVD 1-17’ copy the content of the folder ‘Results_to_run_R_SVD1to17_in_isolation’ into the ‘Results’ folder. In addition, set ‘memory_larger_than_16GB’ to ‘FALSE’ to skip running the script ‘SVD_0c_Correlation_with_GTEx.R’. The analysis is finished, once the message 'Waiting for C# script to finish 3rd part (already waited for 0 min)' appears.<br>
 <br>
 C# and R-script process the data in a successive order that is documented in the 'Code_file.sc' of the C# solution. Whenever one script finishes its current analysis part, it will write a file into the results folder. The other script will wait with the next analysis step until it can detect that file. Both scripts check the results directory every 30 min.<br>
 <br>
