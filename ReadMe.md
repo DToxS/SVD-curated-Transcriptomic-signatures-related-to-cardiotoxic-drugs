@@ -211,6 +211,7 @@ To only run R scripts ‘SVD 1-17’ copy the content of the folder ‘Results_t
 C#- and R-script process the data in a successive order that is documented in the 'Code_file.sc' of the C# solution. Whenever one script finishes its current analysis part, it will write a file into the results folder. The other script will wait with the next analysis step until it can detect that file. Both scripts check the results directory every 30 min.<br>
 The C# script writes a progress report file into the 'Results' directory. Overall progress information about the running R pipeline can be obtained from the R-console. Additionally, some R-scripts write progress report files into the results folder as well.<br>
 <br>
+
 ---
 <br>
 <b>Output of the complete pipeline</b><br>
