@@ -175,8 +175,8 @@ PMID: 32382064 or Pirruccello Nature Communications volume 11, Article number: 2
 <br>
 
 ---
-<br>
-<b>Run the analysis</b><br>
+
+## Run the analysis
 <br>
 <b>Windows: C# script</b><br>
 Download the Visual Studio Installer (https://visualstudio.microsoft.com/downloads/). Follow the instructions and install Visual Studio and the package 'NET desktop development'.<br>
