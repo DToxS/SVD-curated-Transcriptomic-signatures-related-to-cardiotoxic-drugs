@@ -5,9 +5,8 @@ This folder contains C# and R code that was used to do the main analyses in our 
 To run the pipeline in a LINUX environment, the folder also contains a compiled executable of the C# script. Please see details below.<br>
 <br>
 The R-scripts ‘SVD1-17’ that use SVD to identify drug-selective gene expression profiles and search for transcriptomic outlier responses can be run in isolation, skipping the need for the preparation of datasets published by others. Please see details below.<br>
-<br>
 
-#
+###
 <br>
 Below is a documentation of the directory structure and all needed experimental and databases files.
 The downloaded zip-folder from github contains the first three directories 'AA_csharp_code', 'AA_csharp_exe_for_linux' and 'AA_R_code'. If unpacking this folder generates a warning about too long file names, rename the zip folder to "S" and retry the unpacking.<br>
