@@ -14,7 +14,7 @@ The merged folder will contain the following directory structure, missing files 
 ----AA_csharp_code<br>
 ------1 C# solution file ('LINCS_DToxS_SVD.sln') and 1 subdirectory<br>
 ----AA_csharp_exe_for_linux<br>
-------10 files including (Project2.exe)<br>
+------10 files (including Project2.exe)<br>
 ----AA_R_code<br>
 ------52 R-code files<br>
 <br>
