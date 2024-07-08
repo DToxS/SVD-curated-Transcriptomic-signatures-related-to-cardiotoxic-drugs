@@ -35,6 +35,7 @@ The merged folder will contain the following directory structure, missing files 
 --------Drug_metadata.txt<br>
 --------FAERS_risk_profiles.txt<br>
 --------Lincs_experimental_metadata.txt<br>
+--------Lincs_experimental_metadata_EC_cocultures.txt<br>
 --------LincsDrugDosage_harmonized_names.txt<br>
 ------RARG_variant<br>
 --------RARG_variant.txt<br>
