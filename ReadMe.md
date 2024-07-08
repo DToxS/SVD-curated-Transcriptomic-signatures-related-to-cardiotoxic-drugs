@@ -5,6 +5,7 @@ This folder contains C# and R code that was used to do the main analyses in our 
 To run the pipeline in a LINUX environment, the folder also contains a compiled executable of the C# script. Please see details below.<br>
 <br>
 The R-scripts ‘SVD1-17’ that use SVD to identify drug-selective gene expression profiles and search for transcriptomic outlier responses can be run in isolation, skipping the need for the preparation of datasets published by others. Please see details below.
+<br>
 
 ---
 <br>
@@ -169,6 +170,8 @@ These downloads can be skipped, see below.<br>
 Subdirectory: '../Cardiomyopathy_genomics/'<br>
 PMID: 33495597 or Harper et al. Nature Genetics volume 53, pages135–142 (2021): Download the file '41588_2020_764_MOESM3_ESM.xlsx'. Copy the spreadsheet on sheet S2 without the initial description (i.e., rows 5-155) into a new document and save it in 'text (tab-delimited) (\*.txt)' format under the name 'Harper_2021_suppl_table_2.txt' into the specified folder.<br>
 PMID: 32382064 or Pirruccello Nature Communications volume 11, Article number: 2254 (2020): Download 'Supplementary Dataset 3', delete the lines with headline functions (i.e. lines 2, 25, 40, 63, 96, 125 and 138) and save it in 'text (tab-delimieted) (\*.txt)' format under the name 'Pirruccello_2020_suppl_dataFile_3.txt' into the specified folder.<br>
+<br>
+
 ---
 <br>
 <b>Run the analysis</b><br>
@@ -224,6 +227,8 @@ If you want to include these steps, you have to uncomment the related C# code by
 Similarly, you have to uncomment the related R code in 'SVD_0000000_main_Run_pipeline.R' by deleting '#' at the beginning of each of the following lines:<br>
 #source('SVD_0a_singleCell.R')<br>
 #source('SVD_0b_HeartCellAtlas_singleCell.R)<br>
+<br>
+
 ---
 <br>
 System requirements/Performance:<br>
