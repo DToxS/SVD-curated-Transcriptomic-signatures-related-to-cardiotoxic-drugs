@@ -237,13 +237,14 @@ Similarly, you have to uncomment the related R code in 'SVD_0000000_main_Run_pip
 
 ---
 <br>
-<b>System requirements/Performance</b><br>
+
+##<b>System requirements/Performance</b><br>
 <b>High-performance computer - Windows</b><br>
 C# and R-code were developed on a high-performance computer with 40 cores and ~400 GB RAM that used Windows 10 Pro as an operating system.<br>
 C# code was developed using Microsoft Visual Studio Community 2022 version 17.5.5 (https://visualstudio.microsoft.com/downloads/), R code using R version 4.1.0 and Rstudio 2023.06.1 Build 524.<br>
 On this system, the whole pipeline finishes within less than 10 hours.<br>
 <br>
-<b>igh-performance computer - Linux</b><br>
+<b>High-performance computer - Linux</b><br>
 C# executable and R-code were tested on a high-performance computer with 40 cores and ~400 GB RAM that used 'ubuntu debian' (version '22.04 LTS') as an operating system.<br>
 On this system, the whole pipeline finishes within less than 10 hours as well.<br>
 <br>
