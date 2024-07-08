@@ -123,7 +123,7 @@ Please download the indicated files from the given links and follow the instruct
 ---------------------------------------------<br>
 <br>
 Initial LINCs datasets processed by pipeline:<br>
-Select 'Datasets used for prediction of transcriptomic and genomic signatures for TKI-induced cardiotoxicity' at 'https://iyengarlab.org/dtoxs/datasets.php' and unzip the downloaded file. Copy the directory 'LINCs_DToxS_SVD' to a your hard drive. Copy the code directories 'AA_csharp_code' and 'AA_R_code' obtained from this gitHub page into that directory.<br>
+Select 'Datasets used for prediction of transcriptomic and genomic signatures for TKI-induced cardiotoxicity' at 'https://iyengarlab.org/dtoxs/datasets.php' and unzip the downloaded file. Copy the directory 'LINCs_DToxS_SVD' to a your hard drive. Copy the code directories 'AA_csharp_code', 'AA_csharp_exe_for_linux' and 'AA_R_code' obtained from this gitHub page into that directory.<br>
 <br>
 ---------------------------------------------<br>
 <br>
