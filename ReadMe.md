@@ -238,7 +238,7 @@ Similarly, you have to uncomment the related R code in 'SVD_0000000_main_Run_pip
 ---
 <br>
 
-##<b>System requirements/Performance</b><br>
+## <b>System requirements/Performance</b><br>
 <b>High-performance computer - Windows</b><br>
 C# and R-code were developed on a high-performance computer with 40 cores and ~400 GB RAM that used Windows 10 Pro as an operating system.<br>
 C# code was developed using Microsoft Visual Studio Community 2022 version 17.5.5 (https://visualstudio.microsoft.com/downloads/), R code using R version 4.1.0 and Rstudio 2023.06.1 Build 524.<br>
