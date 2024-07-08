@@ -1,5 +1,7 @@
 This folder contains C# and R code that was used to do the main analyses in our manuscript "Multiscale mapping of transcriptomic signatures for cardiotoxic drugs" that is currently available as a preprint (10.1101/2021.11.02.466774).<br>
 <br>
+Currently under construction<br>
+<br>
 --------------------------------------------------------------------------------<br>
 <br>
 Below is a documentation of the directory structure and all needed experimental and databases files.
@@ -90,6 +92,18 @@ The merged folder will contain the following directory structure, missing files 
 ------Results<br>
 --------ScSnRNAseq_enrichment (all datasets are part of zip-folder at 'https://iyengarlab.org/dtoxs/datasets.php')<br>
 ----------44 files with enrichment results, 1 file with references<br>
+<br>
+------Results_to_run_R_SVD1to17_in_isolation<br>
+--------SVD_DEGenes_iPSCdCMs_ECCoCulture_Signed_minus_log10pvalue<br>
+----------1_DEGs<br>
+------------Deg_summary.txt<br>
+------------SVD_DEGenes_iPSCdCMs_ECCoCulture_Signed_minus_log10pvalue_topall.txt<br>
+--------SVD_DEGenes_iPSCdCMs_P0_Signed_minus_log10pvalue<br>
+----------1_DEGs<br>
+------------Deg_summary.txt<br>
+------------SVD_DEGenes_iPSCdCMs_P0_Signed_minus_log10pvalue_topall.txt<br>
+--------Read_me.txt<br>
+--------Report_finished_1st_part_by_Csharp.txt<br>
 <br>
 The indicated files can be downloaded from the following links. Since some files might have been updated and modified after we downloaded them, we also indicate our download dates.<br>
 <br>
