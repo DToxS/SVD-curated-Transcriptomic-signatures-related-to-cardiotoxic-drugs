@@ -233,10 +233,8 @@ If you want to include these steps, you have to uncomment the related C# code by
 Similarly, you have to uncomment the related R code in 'SVD_0000000_main_Run_pipeline.R' by deleting '#' at the beginning of each of the following lines:<br>
 #source('SVD_0a_singleCell.R')<br>
 #source('SVD_0b_HeartCellAtlas_singleCell.R)<br>
-<br>
 
 ---
-<br>
 
 ## <b>System requirements/Performance</b><br>
 <b>High-performance computer - Windows</b><br>
