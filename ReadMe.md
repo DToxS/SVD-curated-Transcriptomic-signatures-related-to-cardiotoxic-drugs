@@ -235,12 +235,16 @@ Similarly, you have to uncomment the related R code in 'SVD_0000000_main_Run_pip
 ------------------------------------------------------------------------------------------------------<br>
 <br>
 System requirements/Performance:<br>
-High-performance computer<br>
-C# and R-code were developed on a high-performance computer with 40 cores and 384 GB RAM that used Windows 10 Pro as an operating system.<br>
+High-performance computer - Windows<br>
+C# and R-code were developed on a high-performance computer with 40 cores and ~400 GB RAM that used Windows 10 Pro as an operating system.<br>
 C# code was developed using Microsoft Visual Studio Community 2022 version 17.5.5 (https://visualstudio.microsoft.com/downloads/), R code using R version 4.1.0 and Rstudio 2023.06.1 Build 524.<br>
 On this system, the whole pipeline finishes within less than 10 hours.<br>
 <br>
-Laptop with 16GB memory<br>
+High-performance computer - Linux<br>
+C# executable and R-code were tested on a high-performance computer with 40 cores and ~400 GB RAM that used 'ubuntu debian' (version '22.04 LTS') as an operating system.<br>
+On this system, the whole pipeline finishes within less than 10 hours as well.<br>
+<br>
+Laptop with 16GB memory - Windows<br>
 Code was optimized to also run on a laptop with 16GB memory and one core. All main and almost all supplemental figures can be reproduced on a similar computer (except Suppl. Figures 1A and B).<br>
 Number of cores was set to 1 in the R-file 'SVD_global_parameter.R', "Global_class.Memory_larger_than_16GB = " to "false".<br>
 Running the file 'SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSpecificEigenarrays_for_test_sets.R' with only one core can take a few days, extending the time taken by the whole pipeline to finish.<br>
