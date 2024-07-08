@@ -8,7 +8,8 @@ The R-scripts ‘SVD1-17’ that use SVD to identify drug-selective gene express
 <br>
 
 ---
-<br>
+
+## Directories and files 
 Below is a documentation of the directory structure and all needed experimental and databases files.
 The downloaded zip-folder from github contains the first three directories 'AA_csharp_code', 'AA_csharp_exe_for_linux' and 'AA_R_code'. If unpacking this folder generates a warning about too long file names, rename the zip folder to "S" and retry the unpacking.<br>
 All of our datasets can be downloaded from 'https://iyengarlab.org/dtoxs/datasets.php' after selection of 'Datasets used for prediction of transcriptomic and genomic signatures for TKI-induced cardiotoxicity'. The downloaded dataset zip-folder contains all other directories listed below.<br>
@@ -111,10 +112,10 @@ The merged folder will contain the following directory structure, missing files 
 ------------SVD_DEGenes_iPSCdCMs_P0_Signed_minus_log10pvalue_topall.txt<br>
 --------Read_me.txt<br>
 --------Report_finished_1st_part_by_Csharp.txt<br>
-<br>
 
 ---
-<br>
+
+## Download and preparation of datasets generated and provides by others
 The indicated files can be downloaded from the following links. Since some files might have been updated and modified after we downloaded them, we also indicate our download dates.<br>
 <br>
 Any user who only wants to run the R scripts SVD 1-17 that use SVD to identify drug-selective gene expression profiles and search for transcriptomic outliers can skip all following steps and continue with the section ‘Run the analysis’ – ‘R-scripts’.<br>
@@ -211,18 +212,7 @@ To only run R scripts ‘SVD 1-17’ copy the content of the folder ‘Results_t
 C#- and R-script process the data in a successive order that is documented in the 'Code_file.sc' of the C# solution. Whenever one script finishes its current analysis part, it will write a file into the results folder. The other script will wait with the next analysis step until it can detect that file. Both scripts check the results directory every 30 min.<br>
 The C# script writes a progress report file into the 'Results' directory. Overall progress information about the running R pipeline can be obtained from the R-console. Additionally, some R-scripts write progress report files into the results folder as well.<br>
 <br>
-
----
-<br>
-<b>Output of the complete pipeline</b><br>
-- The results folder "./Results/SVD_manuscript_supplTables/" will contain all supplemental tables that contain results generated from the data (Suppl. Tables 3 - 32).<br>
-- The results folder "./Results/SVD_manuscript_figures/" will contain PDFs, image files and graphml-files that were used to generate main and supplemental figures.
-  Graphml files can be visualized using yED graph editor (https://www.yworks.com/products/yed/download).<br>
-<br>
-
----
-<br>
-SKIP of single cell RNAseq analysis:<br>
+<b>Activate single cell RNAseq analysis</b><br>
 We assume that most users want to skip the analysis of the sc/sn RNAseq datasets that are very time consumptive. Therefore, we provide the enrichment results for all single cell RNAseq datasets as described under 'Subdirectory: ../Results/ScSnRNAseq_enrichment/'<br>
 If you want to include these steps, you have to uncomment the related C# code by deleting '\\' at the beginning of each of the following lines:<br>
 \\SingleCellNucleusRNAseq_analysis_class scSnRNAseq = new SingleCellNucleusRNAseq_analysis_class();<br>
@@ -236,7 +226,14 @@ Similarly, you have to uncomment the related R code in 'SVD_0000000_main_Run_pip
 
 ---
 
-## <b>System requirements/Performance</b><br>
+## Output of the complete pipeline
+- The results folder "./Results/SVD_manuscript_supplTables/" will contain all supplemental tables that contain results generated from the data (Suppl. Tables 3 - 32).<br>
+- The results folder "./Results/SVD_manuscript_figures/" will contain PDFs, image files and graphml-files that were used to generate main and supplemental figures.
+  Graphml files can be visualized using yED graph editor (https://www.yworks.com/products/yed/download).<br>
+
+---
+
+## System requirements/Performance
 <b>High-performance computer - Windows</b><br>
 C# and R-code were developed on a high-performance computer with 40 cores and ~400 GB RAM that used Windows 10 Pro as an operating system.<br>
 C# code was developed using Microsoft Visual Studio Community 2022 version 17.5.5 (https://visualstudio.microsoft.com/downloads/), R code using R version 4.1.0 and Rstudio 2023.06.1 Build 524.<br>
