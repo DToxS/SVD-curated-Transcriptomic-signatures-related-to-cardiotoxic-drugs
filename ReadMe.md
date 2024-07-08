@@ -211,10 +211,13 @@ To only run R scripts ‘SVD 1-17’ copy the content of the folder ‘Results_t
 C#- and R-script process the data in a successive order that is documented in the 'Code_file.sc' of the C# solution. Whenever one script finishes its current analysis part, it will write a file into the results folder. The other script will wait with the next analysis step until it can detect that file. Both scripts check the results directory every 30 min.<br>
 The C# script writes a progress report file into the 'Results' directory. Overall progress information about the running R pipeline can be obtained from the R-console. Additionally, some R-scripts write progress report files into the results folder as well.<br>
 <br>
+---
+<br>
 <b>Output of the complete pipeline</b><br>
 - The results folder "./Results/SVD_manuscript_supplTables/" will contain all supplemental tables that contain results generated from the data (Suppl. Tables 3 - 32).<br>
 - The results folder "./Results/SVD_manuscript_figures/" will contain PDFs, image files and graphml-files that were used to generate main and supplemental figures.
   Graphml files can be visualized using yED graph editor (https://www.yworks.com/products/yed/download).<br>
+<br>
 ---
 <br>
 SKIP of single cell RNAseq analysis:<br>
@@ -232,17 +235,17 @@ Similarly, you have to uncomment the related R code in 'SVD_0000000_main_Run_pip
 
 ---
 <br>
-System requirements/Performance:<br>
-High-performance computer - Windows<br>
+<b>System requirements/Performance</b><br>
+<b>High-performance computer - Windows</b><br>
 C# and R-code were developed on a high-performance computer with 40 cores and ~400 GB RAM that used Windows 10 Pro as an operating system.<br>
 C# code was developed using Microsoft Visual Studio Community 2022 version 17.5.5 (https://visualstudio.microsoft.com/downloads/), R code using R version 4.1.0 and Rstudio 2023.06.1 Build 524.<br>
 On this system, the whole pipeline finishes within less than 10 hours.<br>
 <br>
-High-performance computer - Linux<br>
+<b>igh-performance computer - Linux</b><br>
 C# executable and R-code were tested on a high-performance computer with 40 cores and ~400 GB RAM that used 'ubuntu debian' (version '22.04 LTS') as an operating system.<br>
 On this system, the whole pipeline finishes within less than 10 hours as well.<br>
 <br>
-Laptop with 16GB memory - Windows<br>
+<b>Laptop with 16GB memory - Windows</b><br>
 Code was optimized to also run on a laptop with 16GB memory and one core. All main and almost all supplemental figures can be reproduced on a similar computer (except Suppl. Figures 1A and B).<br>
 Number of cores was set to 1 in the R-file 'SVD_global_parameter.R', "Global_class.Memory_larger_than_16GB = " to "false".<br>
 Running the file 'SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSpecificEigenarrays_for_test_sets.R' with only one core can take a few days, extending the time taken by the whole pipeline to finish.<br>
