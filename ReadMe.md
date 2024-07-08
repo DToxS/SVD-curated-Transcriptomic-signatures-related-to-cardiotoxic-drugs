@@ -187,7 +187,7 @@ Start debugging in the menu 'Debug' or by pressing F5.<br>
 <b>Linux: C# executable</b><br>
 To run the pipeline on a linux system, download  the ‘mono-devel’ package from 'mono-project.com' ("an open source implementation of Microsoft's .NET Framework", "sponsored by Microsoft"), e.g. by using ‘sudo apt install mono-devel‘.<br>
 Use the terminal to open the subdirectory ‘AA_csharp_exe_for_linux’ and start the code by using the command ‘mono Project2.exe’.
-For the R-script, follow the instructions below, except set ‘memory_larger_than_16GB’ to ‘FALSE’, since the compiled C# script makes the same assumption.
+For the R-script, follow the instructions below, except set ‘memory_larger_than_16GB’ to ‘FALSE’, since the compiled C# script makes the same assumption.<br>
 <br>
 <b>R-scripts:</b><br>
 Install R (https://www.r-project.org/).<br>
