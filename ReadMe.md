@@ -230,6 +230,7 @@ Similarly, you have to uncomment the related R code in 'SVD_0000000_main_Run_pip
 - The results folder "./Results/SVD_manuscript_supplData/" will contain all supplemental data files that contain results generated from the data (Suppl. Data 3 - 27).<br>
 - The results folder "./Results/SVD_manuscript_figures/" will contain PDFs, image files and graphml-files that were used to generate main and supplemental figures.
   Graphml files can be visualized using yED graph editor that is freely available at https://www.yworks.com/products/yed/download.<br>
+- The results folders starting with 'MBCO_desktop_application' contain files that can be read using our application that can be downloaded at mbc-ontology.org to generate networks that connect expressed SCP genes to identified pathways. Use the 'Read data menu', select 'Read all files in directory', copy-paste the whole directory into the 'Read all files in directory' text box, select 'Example 1'- (or 'Custom 1'-) column names, press 'Read' and then 'Analyze'. In the results folder, open those networks with yED that contain the same name twice (e.g., 'Mbco_human_Contraction_Contraction.graphml').
 
 ---
 
