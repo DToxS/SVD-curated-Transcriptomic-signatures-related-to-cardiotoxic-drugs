@@ -242,7 +242,6 @@ On this system, the whole pipeline finishes within less than 10 hours.<br>
 <br>
 <b>High-performance computer - Linux</b><br>
 C# executable and R-code were tested on a high-performance computer with 40 cores and ~400 GB RAM that used 'ubuntu debian' (version '22.04 LTS') as an operating system.<br>
-On this system, the whole pipeline finishes within less than 10 hours as well.<br>
 <br>
 <b>Laptop with 16GB memory - Windows</b><br>
 Code was optimized to also run on a laptop with 16GB memory and one core. All main and almost all supplemental figures can be reproduced on a similar computer (except Suppl. Figures 1A and B).<br>
