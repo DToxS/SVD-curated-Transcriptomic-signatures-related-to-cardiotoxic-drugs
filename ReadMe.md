@@ -230,7 +230,7 @@ Similarly, you have to uncomment the related R code in 'SVD_0000000_main_Run_pip
 - The results folder "./Results/SVD_manuscript_supplData/" will contain all supplemental data files that contain results generated from the data (Suppl. Data 3 - 27).<br>
 - The results folder "./Results/SVD_manuscript_figures/" will contain PDFs, image files and graphml-files that were used to generate main and supplemental figures.
   Graphml files can be visualized using yED graph editor that is freely available at https://www.yworks.com/products/yed/download.<br>
-- The results folders starting with 'MBCO_desktop_application' contain files that allow investigation of expressed genes that map to identified pathways, using our MBCO application (mbc-ontology.org). See the generated 'ReadMe.txt' in folders for details.
+- The results folders starting with 'MBCO_desktop_application' contain files that allow investigation of genes that are expressed by cardiotoxic or non-carditoxic kinase inhibitors and map to identified pathways, using our MBCO application (mbc-ontology.org). See the generated 'ReadMe.txt' in folders for details.
 
 ---
 
