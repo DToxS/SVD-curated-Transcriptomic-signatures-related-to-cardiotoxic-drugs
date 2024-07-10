@@ -249,8 +249,8 @@ Number of cores was set to 1 in the R-file 'SVD_global_parameter.R', "Global_cla
 Running the file 'SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSpecificEigenarrays.R' with only one core can take a few days, extending the time taken by the whole pipeline to finish.<br>
 
 <b>Time-consumptive steps</b><br>
-SVD part 2: Rscript: SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSpecificEigenarrays.R<br>
-SVD part 2 II - C#: Filtering of genomic data by quality control<br>
+SVD part 2: Rscript: 'SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSpecificEigenarrays'<br>
+SVD part 2 II - C#: 'Filtering of genomic data by quality control' (after 'Generation of minor allel')<br>
 
 
 
