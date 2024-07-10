@@ -246,4 +246,11 @@ C# executable and R-code were tested on a high-performance computer with 40 core
 <b>Laptop with 16GB memory - Windows</b><br>
 Code was optimized to also run on a laptop with 16GB memory and one core. All main and almost all supplemental figures can be reproduced on a similar computer (except Suppl. Figures 1A and B).<br>
 Number of cores was set to 1 in the R-file 'SVD_global_parameter.R', "Global_class.Memory_larger_than_16GB = " to "false".<br>
-Running the file 'SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSpecificEigenarrays_for_test_sets.R' with only one core can take a few days, extending the time taken by the whole pipeline to finish.<br>
+Running the file 'SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSpecificEigenarrays.R' with only one core can take a few days, extending the time taken by the whole pipeline to finish.<br>
+
+# Time-consumptive steps
+SVD part 2: Rscript: SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSpecificEigenarrays.R<br>
+SVD part 2 II - C#: Filtering of genomic data by quality control<br>
+
+
+
