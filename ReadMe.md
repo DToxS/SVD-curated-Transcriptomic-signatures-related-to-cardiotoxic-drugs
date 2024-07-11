@@ -16,7 +16,7 @@ All of our datasets can be downloaded from "https://iyengarlab.org/dtoxs/dataset
 Both downloads contain one folder called "LINCS_DToxS_SVD". Simply merge these folders and copy the merged folder to your hard drive (e.g. to "D:" generating "D:/LINCs_DToxS_SVD/").<br>
 The merged folder will contain the following directory structure, missing files have to be added, as described below.<br>
 <br>
---Your directory (e.g., "D:/LINCs_DToxS_SVD/")<br>
+--Your directory (e.g., "D:/LINCS_DToxS_SVD/")<br>
 ----AA_csharp_code<br>
 ------1 C# solution file ("LINCS_DToxS_SVD.sln") and 1 subdirectory<br>
 ----AA_csharp_exe_for_linux<br>
@@ -122,8 +122,8 @@ Please download the indicated files from the given links and follow the instruct
 <br>
 ---------------------------------------------<br>
 <br>
-Initial LINCs datasets processed by pipeline:<br>
-Select "Datasets used for prediction of transcriptomic and genomic signatures for TKI-induced cardiotoxicity" at "https://iyengarlab.org/dtoxs/datasets.php" and unzip the downloaded file. Copy the directory "LINCs_DToxS_SVD" to a your hard drive. Copy the code directories "AA_csharp_code", "AA_csharp_exe_for_linux" and "AA_R_code" obtained from this gitHub page into that directory.<br>
+Initial LINCS datasets processed by pipeline:<br>
+Select "Datasets used for prediction of transcriptomic and genomic signatures for TKI-induced cardiotoxicity" at "https://iyengarlab.org/dtoxs/datasets.php" and unzip the downloaded file. Copy the directory "LINCS_DToxS_SVD" to a your hard drive. Copy the code directories "AA_csharp_code", "AA_csharp_exe_for_linux" and "AA_R_code" obtained from this gitHub page into that directory.<br>
 <br>
 ---------------------------------------------<br>
 <br>
@@ -182,7 +182,7 @@ PMID: 32382064 or Pirruccello Nature Communications volume 11, Article number: 2
 Download the Visual Studio Installer (https://visualstudio.microsoft.com/downloads/). Follow the instructions and install Visual Studio and the package "NET desktop development".<br>
 Open the file "LINCS_DToxS_SVD.sln" in the "AA_csharp_code" folder with Visual Studio.<br>
 Using the solution explorer (right side of the screen, or if hidden, menu "View" - "Solution explorer") open "LINCS_DToxS_SVD", right click on "References" and select "Manage NuGet packages..:". Select "Restore" in the upper right corner. After the downloads have been finished, restart Visual Studio.<br>
-In the solution explorer select the folder "Common_classes". Select the C# script "Common_classes.cs". Open the class "Global_directory_class" and define hard_drive (e.g., "D:/") and major_directory (e.g., "LINCs_DToxS_SVD/").<br>
+In the solution explorer select the folder "Common_classes". Select the C# script "Common_classes.cs". Open the class "Global_directory_class" and define hard_drive (e.g., "D:/") and major_directory (e.g., "LINCS_DToxS_SVD/").<br>
 Open the C# script "Code_file.cs".<br>
 Depending on the available memory, set "Global_class.Memory_larger_than_16GB = " to "true" or "false" (within the region "User input needed"). If set to false, algorithms generating suppl. figures 1A and B will be skipped.<br>
 Start debugging in the menu "Debug" or by pressing F5.<br>
@@ -197,10 +197,10 @@ Install R (https://www.r-project.org/).<br>
 Install Rtools (https://cran.r-project.org/bin/windows/Rtools/).<br>
 Open the file "SVD_0000000_main_Run_pipeline.R" with any text or R code editor.<br>
 Depending on the available memory, set "memory_larget_than_16GB = " to "TRUE" or "FALSE". If set to false, algorithms generating Suppl. Figures 1A and B will be skipped.
-Set the working directory that contains all R code files (e.g, working_directory = "D:/LINCs_DToxS_SVD/AA_R_code/").<br>
+Set the working directory that contains all R code files (e.g, working_directory = "D:/LINCS_DToxS_SVD/AA_R_code/").<br>
 Save your changes.<br>
-Open the file "SVD_global_parameter.R" and specify the overall_lincs_directory that contains all subdirectories
-(e.g., overall_lincs_directory = "D:/LINCs_DToxS_SVD/").<br>
+Open the file "SVD_global_parameter.R" and specify the "overall_lincs_directory" that contains all subdirectories
+(e.g., "overall_lincs_directory = D:/LINCS_DToxS_SVD/").<br>
 Next, set the number of available cores for parallel processing in the same file. Save your changes.<br>
 Start running the file "SVD_0000000_main_Run_pipeline.R", by coping it into the R user interface or using the functionalities of any suited R code editor.<br>
 R libraries used by our pipeline will be installed by the script "SVD_00_install_missing_packages.R".<br>
