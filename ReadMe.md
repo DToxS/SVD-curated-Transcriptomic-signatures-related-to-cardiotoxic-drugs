@@ -1,7 +1,7 @@
 # Multiscale mapping of transcriptomic signatures for cardiotoxic drugs
 <br>
 
-This folder contains C# and R code that was used to do the main analyses in our manuscript<br>
+This folder contains C# and R code that was used to do the main analyses in our manuscript:<br>
 Multiscale Mapping of Transcriptomic Signatures for Cardiotoxic Drugs. Jens Hansen, Yuguang Xiong, Mustafa Siddiq, Priyanka Dhanan, Bin Hu, Bhavana Shewale, Arjun S. Yadaw, Gomathi Jayaraman, Rosa Tolentino, Yibang Chen, Pedro Martinez, Kristin G. Beaumont, Robert Sebra, Dusica Vidovic, Stephan C. Schürer, Joseph Goldfarb, James Gallo, Marc R. Birtwistle, Eric A. Sobie, Evren U. Azeloglu, Seth Berger, Angel Chan, Christoph Schaniel, Nicole C. Dubois,* Ravi Iyengar*. bioRxiv 2021.11.02.466774; doi: https://doi.org/10.1101/2021.11.02.466774. Formally accepted By Nature Communications.<br>
 <br>
 To run the pipeline in a <b>LINUX</b> environment, the folder also contains a compiled executable of the C# script. Please see details below.<br>
