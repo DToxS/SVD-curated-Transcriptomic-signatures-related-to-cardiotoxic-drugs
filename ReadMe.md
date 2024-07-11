@@ -2,7 +2,7 @@
 <br>
 This folder contains C# and R code that was used to do the main analyses in our manuscript "Multiscale mapping of transcriptomic signatures for cardiotoxic drugs" that is currently available as a preprint (10.1101/2021.11.02.466774).<br>
 <br>
-To run the pipeline in a LINUX environment, the folder also contains a compiled executable of the C# script. Please see details below.<br>
+To run the pipeline in a <b>LINUX</b> environment, the folder also contains a compiled executable of the C# script. Please see details below.<br>
 <br>
 The R-scripts ‘SVD1-17’ that use SVD to identify drug-selective gene expression profiles and search for transcriptomic outlier responses can be run in isolation, skipping the need for the preparation of datasets published by others. Please see details below.<br>
 <br>
