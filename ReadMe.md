@@ -241,7 +241,7 @@ C# code was developed using Microsoft Visual Studio Community 2022 version 17.5.
 On this system, the whole pipeline finishes within less than 10 hours.<br>
 <br>
 <b>High-performance computer - Linux</b><br>
-C# executable and R-code were tested on a high-performance computer with 40 cores and ~400 GB RAM that used 'ubuntu debian' (version '22.04 LTS') as an operating system (after setting 'memory_larger_than_16GB' to 'FALSE').<br>
+C# executable and R-code were tested on a high-performance computer with 40 cores and ~400 GB RAM that used 'ubuntu debian' (version '22.04 LTS') as an operating system (after setting 'memory_larger_than_16GB' to 'FALSE'). Under these conditions, the pipeline took ~1.5 days.<br>
 <br>
 <b>Laptop with 16GB memory - Windows</b><br>
 Code was optimized to also run on a laptop with 16GB memory and one core. All main and almost all supplemental figures can be reproduced on a similar computer (except Suppl. Figures 1A and B).<br>
@@ -250,7 +250,7 @@ Running the file 'SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSp
 
 <b>Time-consumptive steps</b><br>
 SVD part 2: Rscript: 'SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSpecificEigenarrays'<br>
-SVD part 2 II - C#: Processing of the genomic data, in particular 'Filtering of genomic data by quality control' (after 'Generation of minor allel')<br>
+SVD part 2 II - C#: Processing of the genomic data, in particular 'Filtering of genomic data by quality control' (after 'Generation of minor allel'). Runs in parallel to Rscript, if 'Memory_larger_than_10GB' = 'true'.<br>
 
 
 
