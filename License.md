@@ -7,7 +7,7 @@ The copyright holders for the code are the authors/funders.<br>
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.<br>
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.<br>
 <br>
-Please cite our preprint, if you use any of our code:<br>
+Please cite our manuscript, if you use any of our code:<br>
 Multiscale Mapping of Transcriptomic Signatures for Cardiotoxic Drugs. Jens Hansen, Yuguang Xiong, Mustafa Siddiq, Priyanka Dhanan, Bin Hu, Bhavana Shewale, Arjun S. Yadaw, Gomathi Jayaraman, Rosa Tolentino, Yibang Chen, Pedro Martinez, Kristin G. Beaumont, Robert Sebra, Dusica Vidovic, Stephan C. Schürer, Joseph Goldfarb, James Gallo, Marc R. Birtwistle, Eric A. Sobie, Evren U. Azeloglu, Seth Berger, Angel Chan, Christoph Schaniel, Nicole C. Dubois,* Ravi Iyengar*. bioRxiv 2021.11.02.466774; doi: https://doi.org/10.1101/2021.11.02.466774. Formally accepted By Nature Communications.<br>
 <br>
 -----------------------------------------------------------------------------------------<br>
