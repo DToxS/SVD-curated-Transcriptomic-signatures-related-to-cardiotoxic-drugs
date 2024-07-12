@@ -252,7 +252,7 @@ Running the file "SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSp
 
 <b>Time-consumptive steps</b><br>
 SVD part 2: Rscript: "SVD_5_validate_clusters_by_calculating_f1_scores_basedOnDrugSpecificEigenarrays"<br>
-SVD part 2 II - C#: Processing of the genomic data. Runs in parallel to Rscript, if "Memory_larger_than_10GB" = "true".<br>
+SVD part 2 II - C#: Processing of the genomic data. Runs in parallel to Rscript, if "Memory_larger_than_16GB" = "true".<br>
 
 
 
