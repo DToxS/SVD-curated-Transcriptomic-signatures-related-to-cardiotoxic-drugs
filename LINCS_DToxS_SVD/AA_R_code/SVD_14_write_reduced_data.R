@@ -254,7 +254,7 @@ if (bgRealExpression_value=="Decomposed_only")
         
            indexEntity_in_validations = which(entitySpecific_cluster_validations$Entity==current_entity)
            indexEntity_in_collapsed = which(collapsed_real_validations$Entity==current_entity)
-           indexEntity_in_data = grep(paste(".",current_entity,".",sep=''),colnames(Data))
+           indexEntity_in_data = grep(paste("[.]",current_entity,"[.]",sep=''),colnames(Data))
            if ( (length(indexEntity_in_validations)>0)
                &(length(indexEntity_in_data)>0))
            {#Begin
