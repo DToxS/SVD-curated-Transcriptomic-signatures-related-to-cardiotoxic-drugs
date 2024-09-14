@@ -196,7 +196,7 @@ if (exists("collapsed_real_validations"))
       source('SVD_generate_reduced_data_and_setColnames_to_fullDataColnames.R')
       
       {#Begin - Add to all reduced dataset
-        index_current_entity_cols = grep(current_entity,colnames(Data_current))
+        index_current_entity_cols = grep(paste("[.]",current_entity,"[.]",sep=''),colnames(Data_current))
         add_data_current = Data_current[,index_current_entity_cols]
         current_add_colnames = colnames(add_data_current)
         if (length(outlierCellLine)>0)
