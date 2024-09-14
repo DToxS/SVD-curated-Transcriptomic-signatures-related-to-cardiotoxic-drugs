@@ -178,7 +178,7 @@ if (addCoCulture_and_consider_only_drugs_within_that_dataset)
    indexesColKeep = c()
    for (indexCoCultureDrug  in 1:length(coCulture_drugs))
    {#Begin
-      indexesColKeep = c(indexesColKeep,grep(coCulture_drugs[indexCoCultureDrug],colnames(Data)))
+      indexesColKeep = c(indexesColKeep,grep(paste("[.]",coCulture_drugs[indexCoCultureDrug],"[.]",sep=''),colnames(Data)))
    }#End
    Data = Data[,indexesColKeep]
 }#End
@@ -288,7 +288,7 @@ if (bgRealExpression_value=="Decomposed_only")
                 source('SVD_generate_reduced_data_and_setColnames_to_fullDataColnames.R')
           
                 colnames_data_current = colnames(Data_current)
-                indexCurrentEntityColumns = grep(current_entity,colnames_data_current)
+                indexCurrentEntityColumns = grep(paste("[.]",current_entity,"[.]",sep=''),colnames_data_current)
 
                 {#Begin
                    Data_for_r_gene_expression = Data_current[,indexCurrentEntityColumns]
@@ -326,7 +326,7 @@ if (bgRealExpression_value=="Decomposed_only")
                       if (length(indexOutlierCellline)==1)
                       {#Begin
                          outlier_cellline = f1scoreWeigth_outlier_collapsed$Final_selection_for_sample[indexOutlierCellline]
-                         indexOutlierInROutput = grep(outlier_cellline,r_output_gene_expression_lines$Cell_line)
+                         indexOutlierInROutput = grep(paste("[.]",outlier_cellline,"[.]",sep=''),r_output_gene_expression_lines$Cell_line)
                          indexOutlierInROutputDrug = indexOutlierInROutput[indexOutlierInROutput %in% indexCurrentDrugROutput]
                          r_output_gene_expression_lines$Outlier_cell_line[indexOutlierInROutputDrug] = "O"
                       }#End
