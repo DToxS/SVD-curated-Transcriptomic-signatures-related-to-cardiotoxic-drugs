@@ -201,7 +201,7 @@ if (exists("collapsed_real_validations"))
         current_add_colnames = colnames(add_data_current)
         if (length(outlierCellLine)>0)
         {#Begin
-           indexOutlier = grep(outlierCellLine,current_add_colnames)
+           indexOutlier = grep(paste("[.]",outlierCellLine,"[.]",sep=''),current_add_colnames)
            indexNoOutlier = 1:length(current_add_colnames)
            indexNoOutlier = indexNoOutlier[!indexNoOutlier %in% indexOutlier]
            current_add_colnames[indexOutlier] = paste(current_add_colnames[indexOutlier],".Outlier",sep='')
