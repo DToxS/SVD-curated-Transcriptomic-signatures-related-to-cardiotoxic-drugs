@@ -5,6 +5,8 @@ This folder contains C# and R code that was used to do the main analyses in our 
 <br>
 Multiscale Mapping of Transcriptomic Signatures for Cardiotoxic Drugs. Jens Hansen, Yuguang Xiong, Mustafa Siddiq, Priyanka Dhanan, Bin Hu, Bhavana Shewale, Arjun S. Yadaw, Gomathi Jayaraman, Rosa Tolentino, Yibang Chen, Pedro Martinez, Kristin G. Beaumont, Robert Sebra, Dusica Vidovic, Stephan C. Schürer, Joseph Goldfarb, James Gallo, Marc R. Birtwistle, Eric A. Sobie, Evren U. Azeloglu, Seth Berger, Angel Chan, Christoph Schaniel, Nicole C. Dubois,* Ravi Iyengar*. Nat Commun. 2024 Sep 11;15(1):7968. doi: 10.1038/s41467-024-52145-4. PMID: 39261481<br>
 <br>
+The last update was uploaded on 2024 November 23.<br>
+<br>
 To run the pipeline in a <b>LINUX</b> environment, the folder also contains a compiled executable of the C# script. Please see details below.<br>
 <br>
 The R-scripts ‘SVD1-17’ that use SVD to identify drug-selective gene expression profiles and search for transcriptomic outlier responses can be run in isolation, skipping the need for the preparation of datasets published by others. Please see details below.<br>
