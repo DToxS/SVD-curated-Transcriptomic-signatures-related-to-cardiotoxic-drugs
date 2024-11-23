@@ -11,7 +11,7 @@ To run the pipeline in a <b>LINUX</b> environment, the folder also contains a co
 <br>
 The R-scripts ‘SVD1-17’ that use SVD to identify drug-selective gene expression profiles and search for transcriptomic outlier responses can be run in isolation, skipping the need for the preparation of datasets published by others. Please see details below.<br>
 <br>
-The <b>PDF "Manual_for_SVD1-17"</b> describes how to prepare own datasets for their analysis with the R-scirpts 'SVD1-17'.<br>
+The <b>PDF "Manual_for_SVD1-17"</b> describes how to prepare own datasets for their analysis with the R-scripts 'SVD1-17'.<br>
 <br>
 ---
 
